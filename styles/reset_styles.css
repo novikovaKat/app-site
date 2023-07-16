@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a, a:link, a:visited, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+main, body, header, footer{
+    display: block;
+}
+
+ul li{
+    list-style-type: none;
+    display: block;
+}

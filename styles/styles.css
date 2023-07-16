@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Source+Sans+Pro:wght@700&display=swap');
+body{
+    font-size: 13px;
+    font-family: 'Cantarell', sans-serif;
+    min-width: 260px;
+}
+header{
+    background-color: #275DAD; 
+    color:#F4FAFF;
+    position: relative;
+}
+.container{
+    margin: 0px auto;
+    padding: 10px 30px 0px 30px; 
+    max-width: 1180px;
+}
+#header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+#logo{
+    display: none;
+}
+#nav-content{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#nav-autorization{
+    display: flex;
+    align-items: center;
+}
+#nav-autorization div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#menu-icon{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    display: block;
+}
+.menu{
+    display: none;
+}
+.responsive{
+    display: block;
+    background-color: #275DAD;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 100vw;
+    float: right;
+}
+
+.responsive li{
+    text-align: center;
+    padding: 10px;
+}
+
+#nav-content a, #nav-autorization div{
+    padding: 5px; 
+    font-size: 115%;
+}
+h1{
+    padding: 20px 0px;
+    font-size: 150%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+    padding-bottom: 10px;
+    font-size: 125%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+section{
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center; 
+    background-color: #275DAD; 
+    color: #F4FAFF;
+}
+footer span{
+    font-size: 80%;
+}
+#policy-content{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-gap: 1em;
+}
+.tile{
+    background-color: #275DAD;
+    color: #F4FAFF;
+    padding: 20px;
+    margin: 0px 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+.fa-xmark{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+}
+
+/* Modal-blocks */
+.modal-block{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);  
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+}
+
+form{
+    background-color:#F4FAFF;
+    padding: 20px;
+    position: relative;
+}
+form h1{
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+.form-group{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form-buttons{
+    text-align: center;
+    width: 100px;
+    color: #F4FAFF;
+    background-color: #275DAD;
+    border: 0px;
+    margin:0 20px 0px 20px;
+}
+.form-buttons:hover{
+    background-color:#678bc9;
+}
+.form-group label{
+    margin-right: 20px;
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+}
+#reg-form{
+    width: 80vw;
+    height: 80vh;
+    max-width: 400px;
+    min-width: 220px;
+    max-height: 810px;
+    overflow: scroll;
+}
+#log-form{
+    width: 80vw;
+    max-width: 400px;
+    min-width: 220px;    
+}
+#log-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Media queries */
+
+@media screen and (min-width: 600px) {
+    #logo{
+        width: 75px;
+        height: auto;
+        display: block;
+    }
+    #nav-content{
+        height: auto;
+    }
+    .responsive {
+        top: 75px;
+    }
+    body{
+        font-size: 13px;
+    }
+    h1{
+        padding: 10px 60px;
+    }    
+    .tile{
+        margin: 0px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #logo{
+        width: 10vw;
+    }
+    .responsive{
+        top: 10vw;
+    }
+    body{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #logo{
+        width: 100px;
+    }
+    #menu-icon{
+        display: none;
+    }
+    .responsive{
+        display: none;
+        position: relative;
+        width: auto;
+        top: 0px;
+        right: 0px;
+    }
+    .responsive li{
+        padding: 0px;
+    }
+    .menu{
+        margin: 0;  
+        display: flex;
+        align-items: center;
+    }
+    body{
+        font-size: 16px;
+    }
+    #nav-content a, #nav-autorization div{
+        padding: 10px; 
+        font-size: 115%;
+    }
+    #header-nav a:hover, #nav-autorization div:hover{
+        background-color:#678bc9;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        font-size: 17px;
+    }
+    #nav-content a, #nav-autorization div{
+        padding: 20px;
+    }
+}

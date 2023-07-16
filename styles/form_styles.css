@@ -1,0 +1,53 @@
+body{
+    background-color: #275DAD;
+}
+form{
+    background-color:#F4FAFF;
+    padding: 20px;
+}
+form h1{
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-buttons{
+    text-align: center;
+    width: 100px;
+    color: #F4FAFF;
+    background-color: #275DAD;
+    border: 0px;
+    margin:0 20px 0px 20px;
+}
+.form-buttons:hover{
+    background-color:#678bc9;
+}
+.form-group label{
+    margin-right: 20px;
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+}
+#reg-form{
+    margin: 30px auto 30px auto;
+    width: 80vw;
+    max-width: 600px;
+}
+#log-form{
+    width: 80vw;
+    max-width: 400px;
+    min-width: 220px;    
+}
+#log-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#log-form .form-group{
+    text-align: center;
+}
+.text-field{
+    width: 40%;
+}
